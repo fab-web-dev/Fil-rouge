@@ -13,7 +13,7 @@
     <title>Xin chào Vietnam</title>
 </head>
 
-<body>
+<body class="no-scroll">
     <header class="header">
         <h1 class="main-title">Xin chào Vietnam</h1>
         <nav class="nav">
@@ -38,10 +38,9 @@
             </ul>
         </nav>
     </header>
-    <figure class="banner-figure">
-        <img class="banner-img" src="images/headerphoto.jpeg" alt="bannière">
-    </figure>
-    <section class="section">
+    <div class="banner"></div>
+    <div class="section-all">
+    <section class="section section-left">
         <h2 class="section-title">Dernier article</h2>
         <article class="article">
             <a href="#" class="article-link">
@@ -52,33 +51,36 @@
             </a>
         </article>
     </section>
-    <section class="section">
+    <section class="section section-split section-hide-lc">
         <h2 class="section-title">Articles populaires</h2>
-        <article class="article">
-            <a href="#" class="article-link">
-                <figure class="article-figure">
-                    <img class="article-img" src="images/article1.jpg" alt="photo article 1">
-                    <figcaption class="article-figcaption">Lorem ipsum dolor</figcaption>
-                </figure>
-            </a>
-        </article>
-        <article class="article">
-            <a href="#" class="article-link">
-                <figure class="article-figure">
-                    <img class="article-img" src="images/article2.jpg" alt="photo article 2">
-                    <figcaption class="article-figcaption">Lorem ipsum dolor</figcaption>
-                </figure>
-            </a>
-        </article>
-        <article class="article">
-            <a href="#" class="article-link">
-                <figure class="article-figure">
-                    <img class="article-img" src="images/article3.jpg" alt="photo article 3">
-                    <figcaption class="article-figcaption">Lorem ipsum dolor</figcaption>
-                </figure>
-            </a>
-        </article>
+        <div class="section-container">
+            <article class="article">
+                <a href="#" class="article-link">
+                    <figure class="article-figure">
+                        <img class="article-img" src="images/article1.jpg" alt="photo article 1">
+                        <figcaption class="article-figcaption">Lorem ipsum dolor</figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="article">
+                <a href="#" class="article-link">
+                    <figure class="article-figure">
+                        <img class="article-img" src="images/article2.jpg" alt="photo article 2">
+                        <figcaption class="article-figcaption">Lorem ipsum dolor</figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="article">
+                <a href="#" class="article-link">
+                    <figure class="article-figure">
+                        <img class="article-img" src="images/article3.jpg" alt="photo article 3">
+                        <figcaption class="article-figcaption">Lorem ipsum dolor</figcaption>
+                    </figure>
+                </a>
+            </article>
+        </div>
     </section>
+    </div>
     <footer class="footer">
         <h3 class="footer-title">Retrouvez-moi sur</h3>
         <ul class="footer-list">
@@ -109,6 +111,13 @@
             <p class="footer-paragraph">xinchaovietnam.com - Paris 75013</p>
         </div>
     </footer>
+    <div class="main-video" id="mainVideo">
+        <button class="main-button" id="mainButton">Continuer sur le site</button>
+        <video class="video" autoplay muted loop>
+            <source src="images/main-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
