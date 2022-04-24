@@ -3,6 +3,7 @@
 @import "_section";
 @import "_articles";
 @import "_footer";
+@import "_contact";
 
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -62,7 +63,7 @@ figure {
     
     height: 300px;
     margin: 62px 0 15px 0;
-    background: url(/images/headerphoto.jpeg);
+    background: url(../images/headerphoto.jpeg);
     background-size: cover;
     background-position: right;
 }
@@ -118,4 +119,8 @@ figure {
 
 .no-scroll {
     overflow: hidden;
+}
+
+.no-transition {
+    transition: initial;
 }
